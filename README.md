@@ -1,5 +1,8 @@
 ## Backend for Frontend Example Dotnet   
 
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=mercandev_bff-pattern-dotnet&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=mercandev_bff-pattern-dotnet) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=mercandev_bff-pattern-dotnet&metric=bugs)](https://sonarcloud.io/summary/new_code?id=mercandev_bff-pattern-dotnet) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=mercandev_bff-pattern-dotnet&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=mercandev_bff-pattern-dotnet)
+
+
 What is BFF (Front-End to Back-End)? There is a very good article written on this subject. [Link](https://samnewman.io/patterns/architectural/bff) 
 
 In this example, we created 5 different json returning endpoints in [Mockoon](https://mockoon.com/) application, considering that more than one field in the profile tab of the twitter application is due to microservices.
