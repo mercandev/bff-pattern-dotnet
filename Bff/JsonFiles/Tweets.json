@@ -1,0 +1,170 @@
+{
+  "uuid": "7ae743e6-815e-44ae-8896-7d7c84d7f84c",
+  "lastMigration": 25,
+  "name": "Tweets",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "0.0.0.0",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "8c218985-1764-46f9-9b6f-ae2b6fd8641a",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "tweets",
+      "responses": [
+        {
+          "uuid": "849d7055-c252-49e9-a116-8c4d26a6ece7",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "cdb38463-a6d9-46fb-902d-382b05c05374",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "replies",
+      "responses": [
+        {
+          "uuid": "12b8d5a9-e2c4-4fcb-a540-5f351cee30e6",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f6e60818-07d4-4851-b171-70e6eec9ff80",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "media",
+      "responses": [
+        {
+          "uuid": "5b921954-80b3-48fb-81d8-b2722118a461",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "5fe441e0-c07a-4211-b281-3fdac0917337",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "likes",
+      "responses": [
+        {
+          "uuid": "e4ba0c27-aa4b-48cd-8549-0855608c2aa9",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "8c218985-1764-46f9-9b6f-ae2b6fd8641a"
+    },
+    {
+      "type": "route",
+      "uuid": "cdb38463-a6d9-46fb-902d-382b05c05374"
+    },
+    {
+      "type": "route",
+      "uuid": "f6e60818-07d4-4851-b171-70e6eec9ff80"
+    },
+    {
+      "type": "route",
+      "uuid": "5fe441e0-c07a-4211-b281-3fdac0917337"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

@@ -1,0 +1,89 @@
+{
+  "uuid": "6737d400-de0f-4083-8558-de343da058b5",
+  "lastMigration": 25,
+  "name": "Media",
+  "endpointPrefix": "api",
+  "latency": 0,
+  "port": 3003,
+  "hostname": "0.0.0.0",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "ac818e2e-8358-4977-91fd-ecf42b89b56b",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "media",
+      "responses": [
+        {
+          "uuid": "5f3e79e2-5256-4aee-862e-08fbbfb9daae",
+          "body": "[\n  {{#repeat 10}}\n  {\n      \"RepliesId\" : \"{{guid}}\",\n      \"TweetId\": \"{{guid}}\",\n      \"Text\" : \"{{lorem 50}}\",\n      \"CreatedDate\" : \"{{now 'yyyy-MM-dd'}}\",\n      \"User\": {\n        \"Id\" : 1,\n        \"Username\": \"maverick\",\n        \"ProfilePhotoUrl\": \"https://pbs.twimg.com/profile_images/1_400x400.jpg\"\n      },\n      \"LikeCount\" : {{int 0 100}},\n      \"RetweetCount\" : {{int 0 100}},\n      \"Activity\" : {{int 0 20000}},\n      \"Ip\" : {\n        \"Ipv4\" : \"{{ipv4}}\",\n        \"Ipv6\" : \"{{ipv6}}\"\n      },\n      \"Country\" : \"{{country}}\",\n      \"Lat\": {{lat}},\n      \"Long\": {{long}},\n      \"MediaUrl\" : \"https://twitter.com/i/status/1631572703575523330\"\n      \n  }\n  {{/repeat}}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "ac818e2e-8358-4977-91fd-ecf42b89b56b"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
