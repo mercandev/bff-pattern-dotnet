@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Bff.Infrastructure.Authentications;
 
-public class AuthBff : Attribute, IAuthorizationFilter
+public class AuthBffAttribute : Attribute, IAuthorizationFilter
 {
     public string Source { get; set; }
 

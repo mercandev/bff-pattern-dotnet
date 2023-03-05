@@ -18,17 +18,13 @@ public static class ExceptionHandlerRegister
 
                 var exception = context.Features.Get<IExceptionHandlerFeature>();
 
-                if (exception != null)
+                if (exception != null && exception.Error is BffCustomException || exception.Error is Exception)
                 {
-                    if (exception.Error is BffCustomException || exception.Error is Exception)
+                    await context.Response.WriteAsync(new CustomExceptionResponse
                     {
-                        await context.Response.WriteAsync(
-                            new CustomExceptionResponse
-                            {
-                                ErrorMessage = exception.Error.Message
+                        ErrorMessage = exception.Error.Message
 
-                            }.ToString());
-                    }
+                     }.ToString());
                 }
             });
         });

@@ -4,8 +4,6 @@ using System.Net;
 
 namespace Bff.Infrastructure.Exceptions;
 
-
-[Serializable]
 public class CustomExceptionResponse
 {
     public string ErrorMessage { get; set; }

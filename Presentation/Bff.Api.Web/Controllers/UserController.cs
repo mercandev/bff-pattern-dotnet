@@ -28,7 +28,7 @@ public class UserController : Controller
     }
 
     [HttpGet]
-    [AuthBff(Source = SourceConst.ONLY_WEB)]
+    [AuthBffAttribute(Source = SourceConst.ONLY_WEB)]
     public async Task<UserProfileViewModel> UserProfile() => await _userService.GetUserProfileDetail();
 
     [HttpGet]
