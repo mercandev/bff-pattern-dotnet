@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Runtime.Serialization;
+
 namespace Bff.Infrastructure.Exceptions;
 
-public class BffCustomException : Exception
+public class BffCustomException : Exception , ISerializable
 {
-    public BffCustomException() : base()
+    protected BffCustomException() : base()
     {
 
     }
